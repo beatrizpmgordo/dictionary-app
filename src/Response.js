@@ -6,7 +6,11 @@ export default function Response(props) {
   if (props.results) {
     return (
       <div className="Response mt-4">
-        <h2 className="mb-4">{props.results.word}</h2>
+        <h2>{props.results.word}</h2>
+        <p>
+          <strong>{props.results.phonetic}</strong>
+        </p>
+
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
