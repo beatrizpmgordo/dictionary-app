@@ -1,21 +1,21 @@
 import React from "react";
 import Meanings from "./Meanings";
+import "./Response.css";
 
 export default function Response(props) {
-  console.log(props.results);
   if (props.results) {
     return (
-      <div className="Response mt-4">
-        <h2>{props.results.word}</h2>
-        <p>
-          <strong>{props.results.phonetic}</strong>
-        </p>
+      <div className="Response">
+        <section>
+          <h1>{props.results.word}</h1>
+          <h2 className="phonetic">{props.results.phonetic}</h2>
+        </section>
 
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section key={index}>
               <Meanings meanings={meaning} />
-            </div>
+            </section>
           );
         })}
       </div>

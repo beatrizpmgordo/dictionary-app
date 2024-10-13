@@ -1,0 +1,16 @@
+.Response h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000;
+}
+
+.Response .phonetic {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666;
+  display: inline;
+  margin: 20x 0 0;
+}
